@@ -47,3 +47,5 @@ function longestSequence(maxN) {
 }
 
 console.log(longestSequence(1000000));
+
+// Solution: 837799

@@ -23,3 +23,6 @@ function pythagoreanTriplet() {
 }
 
 console.log(pythagoreanTriplet(1000000));
+
+// Solution: 31875000
+// Triplet: a = 200, b = 375, c = 425
