@@ -11,15 +11,15 @@
 */
 
 function pythagoreanTriplet() {
-    for (let a = 1; a < 500; a++) {
-        for (let b = a; b < 1000; b++) {
-            let c = Math.sqrt(a**2 + b**2);
+  for (let a = 1; a < 500; a++) {
+    for (let b = a; b < 1000; b++) {
+      let c = Math.sqrt(a**2 + b**2);
             
-            if (a + b + c == 1000) {
-                return a * b * c;
-            }
-        }
+      if (a + b + c == 1000) {
+        return a * b * c;
+      }
     }
+  }
 }
 
 console.log(pythagoreanTriplet(1000000));

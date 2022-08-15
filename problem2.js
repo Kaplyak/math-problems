@@ -18,32 +18,32 @@
 */
 
 function collatzSequence(n) {
-    let sequenceLength = 1;
+  let sequenceLength = 1;
 
-    while (n > 1) {
-        if (n % 2 == 0) {
-            n = n / 2;
-        } else {
-            n = 3 * n + 1;
-        }
-        sequenceLength++;
+  while (n > 1) {
+    if (n % 2 == 0) {
+      n = n / 2;
+    } else {
+      n = 3 * n + 1;
     }
+    sequenceLength++;
+  }
     
-    return sequenceLength;
+  return sequenceLength;
 }
 
 function longestSequence(maxN) {
-    let longestLength = 0;
-    let longestSequenceStart = 0;
+  let longestLength = 0;
+  let longestSequenceStart = 0;
 
-    for (let i = 0; i < maxN; i++) {
-        if (collatzSequence(i) > longestLength) {
-            longestLength = collatzSequence(i);
-            longestSequenceStart = i;
-        }
+  for (let i = 0; i < maxN; i++) {
+    if (collatzSequence(i) > longestLength) {
+      longestLength = collatzSequence(i);
+      longestSequenceStart = i;
     }
+  }
 
-    return longestSequenceStart;
+  return longestSequenceStart;
 }
 
 console.log(longestSequence(1000000));
